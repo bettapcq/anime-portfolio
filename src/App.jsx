@@ -1,5 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
             {/* <Projects /> */}
           </Col>
           <Col xs={12} lg={6} className="ms-0">
-            {/* <About /> */}
+            <About />
           </Col>
         </Row>
         <Row>{/* <TechStack /> */}</Row>

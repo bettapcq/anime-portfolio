@@ -1,0 +1,73 @@
+@use "../../styles/variables" as *;
+
+.about-image-wrap {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  min-height: 420px;
+
+  img {
+    position: relative;
+    z-index: 2;
+    width: min(100%, 380px);
+    filter: drop-shadow(0 24px 30px rgba(122, 46, 58, 0.15));
+  }
+}
+
+.decor-star {
+  top: 5%;
+  left: 14%;
+  right: auto;
+}
+
+.decor-dots {
+  top: 10%;
+  left: 0;
+  right: auto;
+}
+
+.section-label {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: $lilac;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+}
+
+.about-content {
+  h2 {
+    color: $text-primary;
+    text-shadow: $text-shadow-light;
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(35, 35, 35);
+  }
+
+  p {
+    max-width: 620px;
+    color: $text-secondary;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .glass-section {
+    padding: 2rem;
+  }
+
+  .about-image-wrap {
+    min-height: 340px;
+
+    img {
+      width: min(100%, 310px);
+    }
+  }
+
+  .about-content {
+    text-align: left;
+  }
+}
