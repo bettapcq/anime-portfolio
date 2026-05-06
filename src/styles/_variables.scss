@@ -1,0 +1,38 @@
+// COLORS
+$bg-main: #f7f4f9;
+$bg-gradient-start: #9c68bf;
+$bg-gradient-end: #5e5a5e;
+
+$lilac: #c7a6ff;
+$lavender: #e6d9ff;
+
+$accent-burgundy: #7a2e3a;
+$accent-teal: #4fd1c5;
+$accent-red: #f56565;
+
+$text-primary: #2d2a32;
+$text-secondary: #6b6475;
+
+// GLASS
+$glass-bg: rgba(255, 255, 255, 0.56);
+$glass-border: rgba(255, 255, 255, 0.7);
+$glass-shadow: 0 20px 60px rgba(122, 46, 58, 0.08);
+$glass-blur: blur(18px);
+
+// GRADIENTS
+$primary-gradient: linear-gradient(135deg, #c7a6ff, #8f6cff);
+$accent-gradient: linear-gradient(135deg, #9c79ff, #ff20a3);
+
+// RADIUS
+$radius-xl: 32px;
+$radius-lg: 24px;
+$radius-full: 999px;
+
+// SPACING
+$section-padding: 3rem;
+
+// SHADOWS
+$text-shadow-light: 4px 5px 3px rgba(177, 135, 205, 0.46);
+$text-shadow-medium: 4px 5px 3px rgba(177, 135, 205, 0.95);
+$shadow-light: 2px 4px 15px 5px rgba(177, 135, 205, 0.53);
+$shadow-medium: 0 24px 60px rgba(122, 46, 58, 0.3);
