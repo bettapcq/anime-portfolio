@@ -18,8 +18,8 @@ export default function TiltedCard({
   containerWidth = "100%",
   imageHeight = "300px",
   imageWidth = "300px",
-  scaleOnHover = 1.1,
-  rotateAmplitude = 14,
+  scaleOnHover = 2,
+  rotateAmplitude = 70,
   showTooltip = true,
   overlayContent = null,
   displayOverlayContent = false,
@@ -35,8 +35,8 @@ export default function TiltedCard({
 
   const rotateFigcaption = useSpring(0, {
     stiffness: 350,
-    damping: 30,
-    mass: 1,
+    damping: 50,
+    mass: 3,
   });
 
   const [lastY, setLastY] = useState(0);

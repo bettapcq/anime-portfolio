@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import { projects } from "./ProjectsData";
 import ProjectCard from "./ProjectCard";
 import "./Projects.scss";
+import DecorLayer from "../DecorLayer/DecorLayer";
+import ProjectImg from "../../assets/images/betta-full.png";
 
 const fadeLeft = {
   hidden: {
@@ -36,13 +38,21 @@ function Projects() {
 
   return (
     <motion.section
-      className="glass-section"
+      className="glass-section projects-section"
       id="projects"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}
       variants={fadeLeft}
     >
+      <motion.div
+        className="project-image-wrap"
+        initial={{ opacity: 0, scale: 0.92 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <img src={ProjectImg} alt="Anime avatar Betta" />
+      </motion.div>
       <div className="projects-content">
         <span className="section-label">Progetti</span>
         <h2>Il codice che prende forma.</h2>

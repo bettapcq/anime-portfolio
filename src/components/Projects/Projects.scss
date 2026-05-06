@@ -2,6 +2,9 @@
 
 .projects-content {
   text-align: center;
+  position: relative;
+  overflow: visible;
+  z-index: 2;
 
   h2 {
     color: $text-primary;
@@ -17,6 +20,8 @@
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 2rem;
   perspective: 1000px;
+  position: relative;
+  z-index: 2;
 }
 
 .project-card {
@@ -61,6 +66,7 @@
     margin-bottom: 1rem;
     display: -webkit-box;
 
+    line-clamp: 2;
     -webkit-line-clamp: 2;
 
     -webkit-box-orient: vertical;
@@ -90,6 +96,27 @@
   }
 }
 
+.projects-section.glass-section {
+  position: relative;
+  overflow: visible;
+}
+
+.project-image-wrap {
+  position: absolute;
+  top: -19rem;
+  right: 64rem;
+  width: 357px;
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
 .project-tech {
   display: flex;
   flex-wrap: wrap;
@@ -116,5 +143,15 @@
 @media (max-width: 1160px) {
   .projects-grid {
     grid-template-columns: 1fr;
+  }
+
+  .project-image-wrap {
+    position: absolute;
+    top: -8rem;
+    left: 230px;
+    width: 151px;
+    z-index: 0;
+    pointer-events: none;
+    overflow: visible;
   }
 }
