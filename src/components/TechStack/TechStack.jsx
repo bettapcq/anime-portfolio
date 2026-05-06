@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
 import "./TechStack.scss";
+import TechOctagon from "./TechOctagon";
 
-const fadeRight = {
+const fadeLeft = {
   hidden: {
     opacity: 0,
-    x: 100,
+    x: -100,
     filter: "blur(6px)",
   },
   show: {
@@ -21,12 +22,12 @@ const fadeRight = {
 function TechStack() {
   return (
     <motion.section
-      className=" tech-section"
+      className="tech-section"
       id="tech"
       initial="hidden"
       whileInView="show"
       viewport={{ once: true, amount: 0.1 }}
-      variants={fadeRight}
+      variants={fadeLeft}
     >
       <div className="tech-content">
         <span className="section-label">Tech Stack</span>
@@ -34,9 +35,9 @@ function TechStack() {
         <h2>Tecnologie che danno forma alle idee.</h2>
       </div>
 
-      {/* <div className="tech-octagon-wrapper">
+      <div className="tech-octagon-wrapper">
         <TechOctagon />
-      </div> */}
+      </div>
     </motion.section>
   );
 }

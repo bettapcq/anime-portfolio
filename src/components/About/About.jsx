@@ -4,10 +4,10 @@ import aboutImg from "../../assets/images/about-betta.png";
 import DecorLayer from "../DecorLayer/DecorLayer";
 import "./About.scss";
 
-const fadeLeft = {
+const fadeRight = {
   hidden: {
     opacity: 0,
-    x: -60,
+    x: 100,
     filter: "blur(6px)",
   },
   show: {
@@ -25,22 +25,23 @@ function About() {
   return (
     <motion.section
       className="glass-section"
-      initial={{ opacity: 0, x: -400 }}
-      whileInView={{ opacity: 1, x: 0 }}
+      initial="hidden"
+      whileInView="show"
       viewport={{ once: true, amount: 0.01 }}
       transition={{ duration: 0.7, ease: "easeOut" }}
       id="about"
+      variants={fadeRight}
     >
       <motion.div
         className="about-content"
-        initial={{ opacity: 0, x: 32 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
       >
         <motion.span
           className="section-label"
-          variants={fadeLeft}
+          variants={fadeRight}
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
@@ -50,7 +51,7 @@ function About() {
 
         <motion.h2
           initial="hidden"
-          variants={fadeLeft}
+          variants={fadeRight}
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
@@ -59,14 +60,14 @@ function About() {
       </motion.div>
       <motion.div
         className="about-content"
-        initial={{ opacity: 0, x: 32 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial="hidden"
+        whileInView="show"
         viewport={{ once: true, amount: 0.1 }}
         transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
       >
         <motion.p
           initial="hidden"
-          variants={fadeLeft}
+          variants={fadeRight}
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
@@ -77,7 +78,7 @@ function About() {
         </motion.p>
         <motion.p
           initial="hidden"
-          variants={fadeLeft}
+          variants={fadeRight}
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
@@ -88,7 +89,7 @@ function About() {
 
         <motion.p
           initial="hidden"
-          variants={fadeLeft}
+          variants={fadeRight}
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
