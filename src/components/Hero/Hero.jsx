@@ -4,6 +4,7 @@ import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import heroImg from "../../assets/images/hero-betta.png";
 import cvFile from "../../assets/files/cv_elisabetta_piacquadio_g.pdf";
 import "./Hero.scss";
+import DecorLayer from "../DecorLayer/DecorLayer";
 
 const containerVariants = {
   hidden: {},
@@ -167,6 +168,7 @@ function Hero() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
           >
+            <DecorLayer />
             <img src={heroImg} alt="Anime avatar Betta" />
           </motion.div>
         </Col>

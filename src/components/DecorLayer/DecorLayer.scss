@@ -1,0 +1,65 @@
+@use "../../styles/variables" as *;
+
+.decor-layer {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.decor-glow {
+  position: absolute;
+  top: 8%;
+  right: 8%;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(199, 166, 255, 0.32),
+    rgba(255, 255, 255, 0.02) 70%
+  );
+  filter: blur(34px);
+}
+
+.decor-star {
+  position: absolute;
+  top: 14%;
+  right: 22%;
+  font-size: 2.4rem;
+  color: #b78cff;
+}
+
+.decor-dots {
+  position: absolute;
+  top: 15%;
+  right: 6%;
+  width: 84px;
+  height: 84px;
+  background-image: radial-gradient(#c7a6ff 1.6px, transparent 1.6px);
+  background-size: 12px 12px;
+  opacity: 0.45;
+  overflow: hidden;
+}
+
+.decor-circle {
+  position: absolute;
+  top: 28%;
+  right: 8%;
+  width: 142px;
+  height: 142px;
+  border: 2px solid rgba(199, 166, 255, 0.55);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #b78cff;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  transform: rotate(-8deg);
+
+  p {
+    margin: 0;
+    max-width: 100px;
+    line-height: 1.25;
+  }
+}
