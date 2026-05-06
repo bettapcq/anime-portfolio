@@ -1,6 +1,8 @@
-import { motion, useMotionValue, useSpring } from "motion/react";
+import { motion, useMotionValue, useSpring } from "framer-motion";
 import "./Projects.scss";
 import { FiArrowUpRight } from "react-icons/fi";
+import { useRef } from "react";
+import TiltedCard from "./TiltedCard";
 
 const ProjectCard = ({ project }) => {
   const ref = useRef(null);
@@ -32,40 +34,46 @@ const ProjectCard = ({ project }) => {
   }
 
   return (
-    <motion.article
-      className="project-card"
-      whileHover={{
-        y: -8,
-        scale: 1.03,
-      }}
-      transition={{
-        type: "spring",
-        damping: 24,
-        stiffness: 120,
-      }}
-    >
-      <div className="project-image">
-        <img src={project.image} alt={project.title} />
-      </div>
+    <TiltedCard
+      imageSrc={project.image}
+      altText={project.title}
+      captionText={project.title}
+      containerHeight="360px"
+      containerWidth="100%"
+      imageHeight="360px"
+      imageWidth="280px"
+      rotateAmplitude={10}
+      scaleOnHover={1.05}
+      showTooltip={false}
+      displayOverlayContent={true}
+      overlayContent={
+        <article className="project-card">
+          <div className="project-image-spacer" />
 
-      <div className="project-card-content">
-        <h3>{project.title}</h3>
-        <p>{project.description}</p>
-        <div className="project-tech">
-          {project.tech.map((tech) => (
-            <span key={tech}>{tech}</span>
-          ))}
-        </div>{" "}
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noreferrer"
-          className="project-link"
-        >
-          <FiArrowUpRight />
-        </a>
-      </div>
-    </motion.article>
+          <div className="project-card-content">
+            <div className="project-header">
+              <div>
+                <h3>{project.title}</h3>
+                <p>{project.description}</p>
+              </div>
+            </div>
+            <div className="project-tech">
+              {project.tech.map((tech) => (
+                <span key={tech}>{tech}</span>
+              ))}
+            </div>{" "}
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noreferrer"
+              className="project-link"
+            >
+              <FiArrowUpRight />
+            </a>
+          </div>
+        </article>
+      }
+    />
   );
 };
 
