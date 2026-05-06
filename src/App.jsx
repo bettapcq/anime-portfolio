@@ -3,6 +3,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
+import Collabs from "./components/Collabs/Collabs";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </Row>
         <Row>
           <Projects />
+        </Row>
+        <Row>
+          <Collabs />
         </Row>
       </Container>
     </main>
