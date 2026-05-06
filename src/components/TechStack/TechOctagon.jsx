@@ -28,12 +28,17 @@ function TechOctagon() {
   return (
     <Canvas
       style={{ width: "100%", height: "100%" }}
-      camera={{ position: [0, 0, 11], fov: 40 }}
+      camera={{ position: [0, 0, 20], fov: 20 }}
     >
       <ambientLight intensity={2} />
       <directionalLight position={[2, 1, 1]} intensity={12} />
 
-      <OrbitControls enableZoom={false} />
+      <OrbitControls
+        enableZoom={false}
+        enablePan={false}
+        minPolarAngle={Math.PI / 2}
+        maxPolarAngle={Math.PI / 2}
+      />
 
       <Octagon techStack={techStack} />
     </Canvas>
@@ -43,8 +48,8 @@ function TechOctagon() {
 function Octagon({ techStack }) {
   const octagonRef = useRef(null);
 
-  const RADIUS = 3;
-  const HEIGHT = 6;
+  const RADIUS = 4;
+  const HEIGHT = 4;
   const SIDES = 8;
 
   useFrame((state, delta) => {
