@@ -2,6 +2,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
             <About />
           </Col>
         </Row>
-        <Row>{/* <Projects /> */}</Row>
+        <Row>
+          <Projects />
+        </Row>
       </Container>
     </main>
   );

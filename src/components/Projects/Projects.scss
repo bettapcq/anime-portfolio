@@ -1,0 +1,124 @@
+@use "../../styles/variables" as *;
+
+.projects-content {
+  text-align: center;
+
+  h2 {
+    color: $text-primary;
+    text-shadow: $text-shadow-light;
+    -webkit-text-fill-color: rgb(35, 35, 35);
+  }
+}
+
+.projects-grid {
+  margin-top: 3rem;
+  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(14px);
+
+  box-shadow: $shadow-light;
+  cursor: default;
+}
+
+.project-image {
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.project-card-content {
+  padding: 1.2rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+
+  h3 {
+    color: #9c79ff;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $text-secondary;
+    margin-bottom: 1rem;
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    overflow: hidden;
+  }
+
+  a {
+    display: inline-block;
+    margin-top: auto;
+    color: $accent-teal;
+    font-weight: 800;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.project-link {
+  font-size: 2rem;
+  align-self: flex-end;
+  place-items: center;
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  span {
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    border: 1px solid rgba(123, 109, 255, 0.08);
+    font-size: 0.75rem;
+    font-weight: 800;
+
+    color: $lilac;
+    background: rgba(255, 255, 255, 0.7);
+    box-shadow:
+      inset 0 1px 1px rgba(255, 255, 255, 0.8),
+      0 4px 10px rgba(123, 109, 255, 0.08);
+
+    backdrop-filter: blur(8px);
+
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s ease;
+  }
+}
+
+@media (max-width: 1160px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+}
