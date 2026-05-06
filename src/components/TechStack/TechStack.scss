@@ -69,7 +69,7 @@
   justify-content: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1160) {
   .glass-section {
     padding: 2rem;
   }
@@ -95,5 +95,16 @@
 
   .tech-card-icon {
     font-size: 1.8rem;
+  }
+
+  .tech-card {
+    width: 82px;
+    height: 82px;
+
+    border-radius: 22px;
+    p {
+      font-size: 0.72rem;
+      margin-top: 0.5rem;
+    }
   }
 }

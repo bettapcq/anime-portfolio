@@ -48,7 +48,8 @@ function TechOctagon() {
 function Octagon({ techStack }) {
   const octagonRef = useRef(null);
 
-  const RADIUS = 4;
+  const RADIUS = window.innerWidth < 768 ? 2.5 : 4;
+
   const HEIGHT = 4;
   const SIDES = 8;
 

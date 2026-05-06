@@ -45,7 +45,7 @@ function Projects() {
     >
       <div className="projects-content">
         <span className="section-label">Progetti</span>
-        <h2>Progetti in evidenza.</h2>
+        <h2>Il codice che prende forma.</h2>
       </div>
 
       <div className="projects-grid">

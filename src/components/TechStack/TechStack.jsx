@@ -32,7 +32,7 @@ function TechStack() {
       <div className="tech-content">
         <span className="section-label">Tech Stack</span>
 
-        <h2>Tecnologie che danno forma alle idee.</h2>
+        <h2>Tecnologie che danno forma alle mie idee.</h2>
       </div>
 
       <div className="tech-octagon-wrapper">
