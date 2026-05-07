@@ -94,8 +94,8 @@ function BeyondCode() {
             whileInView="show"
             viewport={{ once: true, amount: 0.1 }}
           >
-            Sono appassionata di effetti speciali makeup, amo il cinema e i
-            festival musicali, e sono affascinata dai{" "}
+            Sono appassionata di effetti speciali makeup, amo il cinema, i manga
+            e i festival musicali, e sono affascinata dai{" "}
             <strong>pipistrelli</strong>: mi piace tutto ciò che ha delle
             caratteristiche un po’ fuori dall’ordinario.
           </motion.p>
