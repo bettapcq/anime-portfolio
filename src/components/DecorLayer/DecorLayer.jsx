@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import "./DecorLayer.scss";
 
-function DecorLayer() {
+function DecorLayer(text) {
   return (
     <div className="decor-layer" aria-hidden="true">
       <motion.div
@@ -25,7 +25,7 @@ function DecorLayer() {
         animate={{ y: [0, -6, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
       >
-        <p>Let’s create something amazing!</p>
+        <p>{text.text}</p>
       </motion.div>
     </div>
   );

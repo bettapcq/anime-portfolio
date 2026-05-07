@@ -41,6 +41,10 @@
   }
 }
 
+.decor-layer {
+  top: 36px;
+}
+
 .hero-image-wrap {
   position: relative;
   display: flex;
@@ -90,7 +94,7 @@
   }
 
   .decor-layer {
-    right: 75%;
+    right: 0;
     top: 50%;
   }
 }

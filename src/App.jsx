@@ -4,6 +4,8 @@ import About from "./components/About/About";
 import TechStack from "./components/TechStack/TechStack";
 import Projects from "./components/Projects/Projects";
 import Collabs from "./components/Collabs/Collabs";
+import BeyondCode from "./components/BeyondCode/BeyondCode";
+import ImageSection from "./components/BeyondCode/ImageSection";
 
 function App() {
   return (
@@ -25,6 +27,14 @@ function App() {
         </Row>
         <Row>
           <Collabs />
+        </Row>
+        <Row>
+          <Col xs={12} md={5} className="p-0 order-2 order-md-1">
+            <ImageSection />
+          </Col>{" "}
+          <Col xs={12} md={7} className="p-0 order-1 order-md-2">
+            <BeyondCode />
+          </Col>
         </Row>
       </Container>
     </main>
