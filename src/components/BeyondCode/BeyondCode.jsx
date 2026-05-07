@@ -77,69 +77,69 @@ function BeyondCode() {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
           >
-            Il mio piccolo mondo insolito.
-          </motion.h2>
+            <motion.h2>Il mio piccolo mondo insolito.</motion.h2>
+          </motion.div>
+          <motion.div
+            className="beyond-content"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
+          >
+            <motion.p
+              initial="hidden"
+              variants={fadeRight}
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              Cinema, musica e dettagli <strong>stravaganti</strong> influenzano
+              molto anche il mio modo di vedere le cose.
+            </motion.p>
+            <motion.p
+              initial="hidden"
+              variants={fadeRight}
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              Sono appassionata di effetti speciali makeup, amo il cinema, i
+              manga e i festival musicali, e sono affascinata dai{" "}
+              <strong>pipistrelli</strong>: mi piace tutto ciò che ha delle
+              caratteristiche un po’ fuori dall’ordinario.
+            </motion.p>
+            <motion.p
+              initial="hidden"
+              variants={fadeRight}
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              Per alcuni anni ho praticato <strong>Krav Maga</strong>,
+              un’esperienza che mi ha insegnato disciplina, concentrazione e
+              determinazione.
+            </motion.p>
+            <motion.p
+              initial="hidden"
+              variants={fadeRight}
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              Nei momenti più tranquilli, invece, mi rilasso creando{" "}
+              <strong>amigurumi</strong>: un modo semplice per rallentare e
+              lasciare spazio alla creatività.
+            </motion.p>
+          </motion.div>
+          <motion.p>
+            Se ti va di conoscermi meglio, trovi tutti i miei contatti tornando
+            all’
+            <strong>
+              <a href="#">
+                inizio della pagina <FiArrowUp />
+              </a>
+            </strong>
+            .
+          </motion.p>
         </motion.div>
-        <motion.div
-          className="beyond-content"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
-        >
-          <motion.p
-            initial="hidden"
-            variants={fadeRight}
-            whileInView="show"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            Cinema, musica e dettagli <strong>stravaganti</strong> influenzano
-            molto anche il mio modo di vedere le cose.
-          </motion.p>
-          <motion.p
-            initial="hidden"
-            variants={fadeRight}
-            whileInView="show"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            Sono appassionata di effetti speciali makeup, amo il cinema, i manga
-            e i festival musicali, e sono affascinata dai{" "}
-            <strong>pipistrelli</strong>: mi piace tutto ciò che ha delle
-            caratteristiche un po’ fuori dall’ordinario.
-          </motion.p>
-          <motion.p
-            initial="hidden"
-            variants={fadeRight}
-            whileInView="show"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            Per alcuni anni ho praticato <strong>Krav Maga</strong>,
-            un’esperienza che mi ha insegnato disciplina, concentrazione e
-            determinazione.
-          </motion.p>
-          <motion.p
-            initial="hidden"
-            variants={fadeRight}
-            whileInView="show"
-            viewport={{ once: true, amount: 0.1 }}
-          >
-            Nei momenti più tranquilli, invece, mi rilasso creando{" "}
-            <strong>amigurumi</strong>: un modo semplice per rallentare e
-            lasciare spazio alla creatività.
-          </motion.p>
-        </motion.div>
-        <motion.p>
-          Se ti va di conoscermi meglio, trovi tutti i miei contatti tornando
-          all’
-          <strong>
-            <a href="#">
-              inizio della pagina <FiArrowUp />
-            </a>
-          </strong>
-          .
-        </motion.p>
-      </motion.div>
-    </motion.section>
+      </motion.section>
+    </section>
   );
 }
 
