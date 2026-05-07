@@ -3,6 +3,7 @@ import "./Projects.scss";
 import { FiArrowUpRight } from "react-icons/fi";
 import { useRef } from "react";
 import TiltedCard from "./TiltedCard";
+import { FaCode, FaPlay } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   const ref = useRef(null);
@@ -62,14 +63,26 @@ const ProjectCard = ({ project }) => {
                 <span key={tech}>{tech}</span>
               ))}
             </div>{" "}
-            <a
-              href={project.link}
-              target="_blank"
-              rel="noreferrer"
-              className="project-link"
-            >
-              <FiArrowUpRight />
-            </a>
+            <div className="project-actions">
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noreferrer"
+                className="project-link-btn"
+              >
+                <FaCode className="project-link" />
+              </a>{" "}
+              {project.demo && (
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="project-link-btn"
+                >
+                  <FaPlay className="project-link" />
+                </a>
+              )}
+            </div>
           </div>
         </article>
       }
