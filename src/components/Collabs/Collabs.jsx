@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import "./Collabs.scss";
+import collabsImg from "../../assets/images/collabs.png";
 
 const fadeRight = {
   hidden: {
@@ -38,60 +39,50 @@ const collaborations = [
 
 const Collabs = () => {
   return (
-    <motion.section className="collabs-section glass-section">
+    <motion.section className="collabs-section glass-section" id="collabs">
       <motion.div
-        className="collabs-content"
+        className="collabs-layout"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.01 }}
-        transition={{ duration: 0.7, ease: "easeOut" }}
         variants={fadeRight}
-        id="collabs"
       >
-        <motion.span
-          className="section-label"
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.01 }}
-          transition={{ duration: 0.7, ease: "easeOut" }}
-          variants={fadeRight}
-        >
-          Collaborazioni
-        </motion.span>
-
-        <motion.h2>Dove le idee si incontrano.</motion.h2>
-
-        <motion.p className="collabs-intro">
-          Progetti, esperienze e lavori condivisi in cui ho potuto crescere,
-          confrontarmi e trasformare idee in interfacce concrete.
-        </motion.p>
-
         <motion.div className="collabs-grid">
           {collaborations.map((item, index) => (
             <motion.article
               className="collab-card"
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.01 }}
-              transition={{ duration: 0.7, ease: "easeOut" }}
+              key={item.title}
               variants={fadeRight}
+              whileHover={{ y: -8, scale: 1.02 }}
             >
-              <motion.div
-                className="collab-number"
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.01 }}
-                transition={{ duration: 0.7, ease: "easeOut" }}
-                variants={fadeRight}
-              >
-                0{index + 1}
-              </motion.div>
+              <motion.div className="collab-number">0{index + 1}</motion.div>
 
               <h3>{item.title}</h3>
               <span>{item.role}</span>
               <p>{item.text}</p>
             </motion.article>
           ))}
+        </motion.div>
+
+        <motion.div className="collabs-side" variants={fadeRight}>
+          <span className="section-label">Collaborazioni</span>
+          <h2>Dove le idee si incontrano.</h2>
+          <p className="collabs-intro">
+            Progetti, esperienze e lavori condivisi in cui ho potuto crescere,
+            confrontarmi e trasformare idee in interfacce concrete.
+          </p>{" "}
+        </motion.div>
+        <motion.div
+          className="collabs-image-wrap"
+          initial={{ opacity: 0, scale: 0.92 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <img
+            src={collabsImg}
+            alt="Illustrazione collaborazioni"
+            className="collabs-img"
+          />
         </motion.div>
       </motion.div>
     </motion.section>

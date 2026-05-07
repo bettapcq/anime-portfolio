@@ -4,6 +4,14 @@
   margin-top: 6rem;
   padding: 4rem 3rem;
   overflow: hidden;
+  h2 {
+    color: $text-primary;
+    text-shadow: $text-shadow-light;
+    background: none;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgb(35, 35, 35);
+  }
 }
 
 .collabs-content {
@@ -109,7 +117,47 @@
   }
 }
 
-@media (max-width: 768px) {
+.collabs-layout {
+  position: relative;
+  overflow: visible;
+  display: grid;
+  grid-template-columns: 1.4fr 0.9fr;
+  gap: 3rem;
+}
+
+.collabs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+}
+
+.collab-card {
+  flex: 1 1 360px;
+}
+
+.collabs-side {
+  position: relative;
+  text-align: left;
+  justify-content: space-between;
+  overflow: visible;
+}
+
+.collabs-image-wrap {
+  position: absolute;
+  top: 15rem;
+  right: 9rem;
+  width: 357px;
+  z-index: 0;
+  pointer-events: none;
+  overflow: visible;
+
+  img {
+    width: 550px;
+    display: block;
+  }
+}
+
+@media (max-width: 1060px) {
   .collabs-section {
     padding: 3rem 2rem;
   }
@@ -120,5 +168,21 @@
 
   .collabs-intro {
     margin: 0;
+  }
+  .collabs-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .collabs-side {
+    order: -1;
+    text-align: center;
+  }
+
+  .collabs-image-wrap {
+    top: 12rem;
+    right: -9rem;
+    img {
+      width: 150px;
+    }
   }
 }
