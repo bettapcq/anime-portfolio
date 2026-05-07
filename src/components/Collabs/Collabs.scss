@@ -166,10 +166,10 @@
 
 .collabs-image-wrap {
   position: absolute;
-  top: 19rem;
-  right: 9rem;
-  width: 357px;
-  z-index: 0;
+  bottom: -3rem;
+  right: 0rem;
+  width: 498px;
+  z-index: -1;
   pointer-events: none;
   overflow: visible;
 
@@ -210,10 +210,10 @@
   }
 
   .collabs-image-wrap {
-    top: 13.8rem;
-    right: -10rem;
+    top: 81rem;
+    left: 0rem;
     img {
-      width: 150px;
+      width: 250px;
     }
   }
 }
