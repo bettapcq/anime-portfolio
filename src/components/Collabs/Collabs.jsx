@@ -4,6 +4,7 @@ import collabsImg from "../../assets/images/collabs.png";
 import { collabs } from "./CollabsData.js";
 import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
+import { FaCode } from "react-icons/fa";
 
 const fadeRight = {
   hidden: {
@@ -55,7 +56,7 @@ const Collabs = () => {
                 rel="noreferrer"
                 className="collabs-link"
               >
-                <FiArrowUpRight />
+                <FaCode />
               </a>
             </motion.article>
           ))}

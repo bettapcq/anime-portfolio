@@ -57,6 +57,10 @@ p {
 
 .image-section {
   overflow: hidden;
+  position: relative;
+  img {
+    width: 500px;
+  }
   .decor-layer {
     right: 0;
     top: 29%;
@@ -74,10 +78,6 @@ p {
   }
 }
 
-.image-img {
-  width: 90%;
-}
-
 @media (max-width: 768px) {
   .beyond-section {
     padding: 3rem 1.5rem;
@@ -91,6 +91,9 @@ p {
   .image-section {
     .decor-layer {
       top: 17%;
+    }
+    img {
+      width: 330px;
     }
   }
 }

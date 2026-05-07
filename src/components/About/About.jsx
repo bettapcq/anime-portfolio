@@ -55,7 +55,7 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Tra creatività, logica e crescita.
+          Curiosità, tecnologia e crescita continua.
         </motion.h2>
       </motion.div>
       <motion.div

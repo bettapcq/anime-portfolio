@@ -207,4 +207,14 @@
     grid-column: auto;
     max-width: 100%;
   }
+  .collabs-section {
+    position: relative;
+    padding-bottom: 0;
+  }
+
+  .collabs-image-wrap {
+    position: absolute;
+    bottom: -110px;
+    width: 220px;
+  }
 }

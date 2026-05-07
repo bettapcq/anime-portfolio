@@ -33,15 +33,15 @@ function ImageSection() {
   return (
     <section className="image-section">
       <motion.section
+        className="image-box"
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.01 }}
         transition={{ duration: 0.7, ease: "easeOut" }}
-        id="about"
         variants={fadeLeft}
       >
         <DecorLayer text={"Bye bye!"} />
-        <img src={byeImg} className="image-img" alt="Anime avatar Betta" />
+        <img src={byeImg} alt="Anime avatar Betta" />
       </motion.section>
     </section>
   );

@@ -14,7 +14,7 @@ export const projects = [
   },
 
   {
-    title: "Portfolio",
+    title: "Anime Portfolio",
     description: "Portfolio stile anime",
     tech: ["React", "Bootstrap", "Three.js", "Framer Motion", "Sass"],
     image: Portfolio,
