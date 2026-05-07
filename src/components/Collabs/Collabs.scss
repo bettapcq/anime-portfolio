@@ -95,6 +95,18 @@
     line-height: 1.6;
     font-size: 0.95rem;
   }
+
+  a {
+    display: inline-block;
+    margin-top: auto;
+    color: $lilac;
+    font-weight: 800;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .collab-number {
@@ -154,6 +166,15 @@
   img {
     width: 550px;
     display: block;
+  }
+}
+
+.collabs-link {
+  font-size: 2rem;
+  align-self: flex-end;
+  place-items: center;
+  &:hover {
+    transform: translateY(-2px);
   }
 }
 

@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import "./Collabs.scss";
 import collabsImg from "../../assets/images/collabs.png";
+import { collabs } from "./CollabsData.js";
+import { useState } from "react";
+import { FiArrowUpRight } from "react-icons/fi";
 
 const fadeRight = {
   hidden: {
@@ -19,25 +22,9 @@ const fadeRight = {
   },
 };
 
-const collaborations = [
-  {
-    title: "aaa aaa",
-    role: "aaaaDev",
-    text: "blablab labl ablablab lablabl ablablab lablablabl ablablabla blablablabl ablablabla blablab lablabla",
-  },
-  {
-    title: "bbbb bbbb",
-    role: "bbb dev",
-    text: "blablab labl ablablab lablabl ablablab lablablabl ablablabla blablablabl lablabla",
-  },
-  {
-    title: "ccc ccc",
-    role: "ccc dev",
-    text: "blablab labl ablablab lablabl ablablab lablablabl blablab lablabla",
-  },
-];
-
 const Collabs = () => {
+  const [orderedCollabs, setOrderedCollabs] = useState(collabs);
+
   return (
     <motion.section className="collabs-section glass-section" id="collabs">
       <motion.div
@@ -48,7 +35,7 @@ const Collabs = () => {
         variants={fadeRight}
       >
         <motion.div className="collabs-grid">
-          {collaborations.map((item, index) => (
+          {orderedCollabs.map((item, index) => (
             <motion.article
               className="collab-card"
               key={item.title}
@@ -56,10 +43,20 @@ const Collabs = () => {
               whileHover={{ y: -8, scale: 1.02 }}
             >
               <motion.div className="collab-number">0{index + 1}</motion.div>
+              <motion.div>
+                <h3>{item.title}</h3>
+                <span>{item.role}</span>
+                <p>{item.text}</p>
+              </motion.div>
 
-              <h3>{item.title}</h3>
-              <span>{item.role}</span>
-              <p>{item.text}</p>
+              <a
+                href={item.link}
+                target="_blank"
+                rel="noreferrer"
+                className="collabs-link"
+              >
+                <FiArrowUpRight />
+              </a>
             </motion.article>
           ))}
         </motion.div>
