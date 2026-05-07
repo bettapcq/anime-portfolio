@@ -101,6 +101,21 @@ img {
   filter: drop-shadow(0 28px 30px rgba(122, 46, 58, 0.18));
 }
 
+@media (max-width: 1024px) {
+  p,
+  h2,
+  h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section-label {
+    display: block;
+    text-align: center;
+  }
+}
+
 //codice utile per verificare layout componenti
 // * {
 //   outline: 1px solid red;

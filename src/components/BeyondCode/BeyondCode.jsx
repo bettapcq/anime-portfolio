@@ -61,15 +61,6 @@ function BeyondCode() {
             >
               Oltre il codice
             </motion.span>
-
-            <motion.h2
-              initial="hidden"
-              variants={fadeRight}
-              whileInView="show"
-              viewport={{ once: true, amount: 0.1 }}
-            >
-              Il mio piccolo mondo insolito.
-            </motion.h2>
           </motion.div>
           <motion.div
             initial="hidden"

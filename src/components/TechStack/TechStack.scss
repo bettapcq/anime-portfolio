@@ -20,6 +20,10 @@
     color: $text-primary;
     text-shadow: $text-shadow-light;
     -webkit-text-fill-color: rgb(35, 35, 35);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
@@ -69,7 +73,7 @@
   justify-content: center;
 }
 
-@media (max-width: 1160) {
+@media (max-width: 1024) {
   .glass-section {
     padding: 2rem;
   }

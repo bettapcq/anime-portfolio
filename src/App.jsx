@@ -14,7 +14,7 @@ function App() {
         <Row className="align-items-center g-4">
           <Hero />
         </Row>
-        <Row className="justify-content-between align-items-start g-3">
+        <Row className="justify-content-between g-3">
           <Col xs={12} lg={7} className="ms-0">
             <TechStack />
           </Col>
@@ -29,10 +29,10 @@ function App() {
           <Collabs />
         </Row>
         <Row>
-          <Col xs={12} md={5} className="p-0 order-2 order-md-1">
+          <Col xs={12} md={5} className="order-2 order-md-1">
             <ImageSection />
           </Col>{" "}
-          <Col xs={12} md={7} className="p-0 order-1 order-md-2">
+          <Col xs={12} md={7} className="order-1 order-md-2">
             <BeyondCode />
           </Col>
         </Row>

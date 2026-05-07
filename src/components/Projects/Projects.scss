@@ -10,6 +10,10 @@
     color: $text-primary;
     text-shadow: $text-shadow-light;
     -webkit-text-fill-color: rgb(35, 35, 35);
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
   }
 }
 
@@ -141,7 +145,7 @@
   }
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1024px) {
   .projects-grid {
     grid-template-columns: 1fr;
   }
@@ -154,5 +158,18 @@
     z-index: 0;
     pointer-events: none;
     overflow: visible;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1290px) {
+  .projects-grid {
+    grid-template-columns: repeat(2, minmax(260px, -1fr));
+    justify-items: center;
+    gap: 1rem;
+  }
+
+  .project-card {
+    max-width: 330px;
+    width: 100%;
   }
 }

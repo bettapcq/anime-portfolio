@@ -27,7 +27,6 @@
 .social-links {
   display: flex;
   gap: 0.8rem;
-  margin: 1.5rem;
 
   a {
     width: 44px;
@@ -58,12 +57,16 @@
   pointer-events: none;
 }
 
-@media (max-width: 1160px) {
+@media (max-width: 1024px) {
   .hero-section {
     position: relative;
     overflow: hidden;
     padding: 3rem 2rem 2rem;
     min-height: 820px;
+
+    p {
+      text-align: start;
+    }
   }
 
   .hero-content-col {
