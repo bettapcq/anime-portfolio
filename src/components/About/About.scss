@@ -47,10 +47,14 @@
   }
 
   p {
-    max-width: 620px;
+    max-width: 800px;
     color: $text-secondary;
     line-height: 1.8;
     margin-bottom: 1rem;
+  }
+
+  strong {
+    color: $violet;
   }
 }
 

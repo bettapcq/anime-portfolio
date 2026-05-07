@@ -4,12 +4,14 @@ import { useRef, useState } from "react";
 import { motion, useMotionValue, useSpring } from "motion/react";
 import "./TiltedCard.scss";
 
+// valori per regolare la fluidità
 const springValues = {
   damping: 30,
   stiffness: 100,
   mass: 2,
 };
 
+// prorietà per rendere la card riutilizzabile
 export default function TiltedCard({
   imageSrc,
   altText = "Tilted card image",
@@ -18,8 +20,8 @@ export default function TiltedCard({
   containerWidth = "100%",
   imageHeight = "300px",
   imageWidth = "300px",
-  scaleOnHover = 2,
-  rotateAmplitude = 70,
+  scaleOnHover = 3,
+  rotateAmplitude = 1.5,
   showTooltip = true,
   overlayContent = null,
   displayOverlayContent = false,

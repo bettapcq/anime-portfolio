@@ -131,7 +131,7 @@ function Hero() {
                 whileTap="tap"
                 variants={socialVariants}
               >
-                <a href="#">
+                <a href="https://github.com/bettapcq" target="_blank">
                   <FaGithub />
                 </a>
               </motion.div>
@@ -142,7 +142,10 @@ function Hero() {
                 whileTap="tap"
                 variants={socialVariants}
               >
-                <a href="#">
+                <a
+                  href="www.linkedin.com/in/elisabettapiacquadio"
+                  target="_blank"
+                >
                   <FaLinkedinIn />
                 </a>
               </motion.div>
@@ -153,7 +156,7 @@ function Hero() {
                 whileTap="tap"
                 variants={socialVariants}
               >
-                <a href="#">
+                <a href="mailto:betta.pcq@gmail.com" target="_blank">
                   <FaEnvelope />
                 </a>
               </motion.div>
