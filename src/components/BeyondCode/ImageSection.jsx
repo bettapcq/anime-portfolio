@@ -12,10 +12,10 @@ const hobbies = [
   "Amigurumi",
 ];
 
-const fadeRight = {
+const fadeLeft = {
   hidden: {
     opacity: 0,
-    x: 100,
+    x: -100,
     filter: "blur(6px)",
   },
   show: {
@@ -29,21 +29,22 @@ const fadeRight = {
   },
 };
 
-function BeyondCode() {
+function ImageSection() {
   return (
-    <motion.section
-      className="image-section"
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.01 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      id="about"
-      variants={fadeRight}
-    >
-      <DecorLayer text={"Bye bye!"} />
-      <img src={byeImg} className="image-img" alt="Anime avatar Betta" />
-    </motion.section>
+    <section className="image-section">
+      <motion.section
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.01 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        id="about"
+        variants={fadeLeft}
+      >
+        <DecorLayer text={"Bye bye!"} />
+        <img src={byeImg} className="image-img" alt="Anime avatar Betta" />
+      </motion.section>
+    </section>
   );
 }
 
-export default BeyondCode;
+export default ImageSection;

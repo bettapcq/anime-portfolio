@@ -5,6 +5,7 @@ body {
   font-family: "Inter", system-ui, sans-serif;
   background: $bg-main;
   color: $text-primary;
+  min-width: 100;
 }
 
 .portfolio-page {
@@ -99,3 +100,8 @@ img {
   object-fit: contain;
   filter: drop-shadow(0 28px 30px rgba(122, 46, 58, 0.18));
 }
+
+//codice utile per verificare layout componenti
+// * {
+//   outline: 1px solid red;
+// }

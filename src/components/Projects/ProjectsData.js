@@ -10,6 +10,7 @@ export const projects = [
     tech: ["React", "Spring Boot", "PostgreSQL", "Swagger", "External APIs"],
     image: PCPal,
     link: "https://github.com/bettapcq/PopCornPal_fe",
+    demo: "https://popcornpal-ep.vercel.app",
   },
 
   {
@@ -17,8 +18,7 @@ export const projects = [
     description: "Portfolio stile anime",
     tech: ["React", "Bootstrap", "Three.js", "Framer Motion", "Sass"],
     image: Portfolio,
-    // link: "#https://github.com/bettapcq/portfolio-ep"
-    link: "#",
+    link: "https://github.com/bettapcq/anime-portfolio",
   },
   {
     title: "Fake Apple Music",

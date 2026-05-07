@@ -143,7 +143,7 @@ function Hero() {
                 variants={socialVariants}
               >
                 <a
-                  href="www.linkedin.com/in/elisabettapiacquadio"
+                  href="https://www.linkedin.com/in/elisabettapiacquadio"
                   target="_blank"
                 >
                   <FaLinkedinIn />

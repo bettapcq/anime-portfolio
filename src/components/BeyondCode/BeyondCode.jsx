@@ -30,44 +30,52 @@ const fadeRight = {
 
 function BeyondCode() {
   return (
-    <motion.section
-      className="beyond-section"
-      initial="hidden"
-      whileInView="show"
-      viewport={{ once: true, amount: 0.01 }}
-      transition={{ duration: 0.7, ease: "easeOut" }}
-      id="about"
-      variants={fadeRight}
-    >
-      <motion.div
-        className="glass-section"
+    <section className="beyond-section">
+      <motion.section
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.1 }}
-        transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
+        viewport={{ once: true, amount: 0.01 }}
+        transition={{ duration: 0.7, ease: "easeOut" }}
+        id="about"
+        variants={fadeRight}
       >
         <motion.div
-          className="beyond-content"
+          className="glass-section beyond-content"
           initial="hidden"
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
           transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
         >
-          <motion.span
-            className="section-label"
-            variants={fadeRight}
+          <motion.div
             initial="hidden"
             whileInView="show"
             viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
           >
-            Oltre il codice
-          </motion.span>
+            <motion.span
+              className="section-label"
+              variants={fadeRight}
+              initial="hidden"
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              Oltre il codice
+            </motion.span>
 
-          <motion.h2
+            <motion.h2
+              initial="hidden"
+              variants={fadeRight}
+              whileInView="show"
+              viewport={{ once: true, amount: 0.1 }}
+            >
+              Il mio piccolo mondo insolito.
+            </motion.h2>
+          </motion.div>
+          <motion.div
             initial="hidden"
-            variants={fadeRight}
             whileInView="show"
             viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
           >
             Il mio piccolo mondo insolito.
           </motion.h2>
