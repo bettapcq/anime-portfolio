@@ -1,7 +1,7 @@
 # My Anime Portfolio
 
-Personal portfolio built with React, Framer Motion, Three Fiber and Sass.  
-A single-page experience inspired by anime aesthetics, cinematic atmospheres and modern interactive UI design.
+Personal portfolio built with React, Framer Motion, Three Fiber and Sass.
+A single-page experience inspired by anime aesthetics, immersive atmospheres and modern interactive UI design.
 
 ---
 
