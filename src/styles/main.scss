@@ -1,5 +1,13 @@
 @use "./variables" as *;
 @use "../components/Hero/Hero";
+
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 body {
   margin: 0;
   font-family: "Inter", system-ui, sans-serif;
@@ -9,12 +17,16 @@ body {
 }
 
 .portfolio-page {
+  width: 100%;
+  max-width: 100%;
   min-height: 100vh;
   padding: 2rem;
   background:
     radial-gradient(circle at top left, $bg-gradient-start, transparent 70%),
     radial-gradient(circle at bottom right, $bg-gradient-end, transparent 70%),
     linear-gradient(135deg, #f7f4f9, #eee6ff);
+  overflow: hidden;
+  overflow: clip;
 }
 
 .eyebrow {

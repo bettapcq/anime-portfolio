@@ -1,7 +1,7 @@
 "use client";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import TechCard from "./TechCard";
 import "./TechStack.scss";
 
@@ -48,7 +48,21 @@ function TechOctagon() {
 function Octagon({ techStack }) {
   const octagonRef = useRef(null);
 
-  const RADIUS = window.innerWidth < 768 ? 2.5 : 4;
+  //per cambiare impostazioni quando si passa da ,obile a desktop e viceversa
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    handleResize();
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  const RADIUS = isMobile ? 2.5 : 4;
 
   const HEIGHT = 4;
   const SIDES = 8;
@@ -62,7 +76,7 @@ function Octagon({ techStack }) {
   return (
     <group ref={octagonRef}>
       <mesh>
-        <cylinderGeometry args={[RADIUS, RADIUS, HEIGHT, SIDES]} />
+        <cylinderGeometry key={RADIUS} args={[RADIUS, RADIUS, HEIGHT, SIDES]} />
         <meshPhysicalMaterial
           transparent
           opacity={0}
