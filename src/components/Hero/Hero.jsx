@@ -2,7 +2,7 @@ import { Button, Col, Row } from "react-bootstrap";
 import * as motion from "motion/react-client";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import heroImg from "../../assets/images/hero-betta.png";
-import cvFile from "../../assets/files/cv_elisabetta_piacquadio_g.pdf";
+import cvFile from "../../assets/files/cv_elisabetta_piacquadio_gr.pdf";
 import "./Hero.scss";
 import DecorLayer from "../DecorLayer/DecorLayer";
 
