@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import "./TechStack.scss";
 import TechOctagon from "./TechOctagon";
+import { useTranslation } from "react-i18next";
 
 const fadeLeft = {
   hidden: {
@@ -20,6 +21,8 @@ const fadeLeft = {
 };
 
 function TechStack() {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       className="tech-section"
@@ -30,9 +33,9 @@ function TechStack() {
       variants={fadeLeft}
     >
       <div className="tech-content">
-        <span className="section-label">Tech Stack</span>
+        <span className="section-label">{t("techStack.title")}</span>
 
-        <h2>Tecnologie che danno forma alle mie idee.</h2>
+        <h2>{t("techStack.description")}</h2>
       </div>
 
       <div className="tech-octagon-wrapper">

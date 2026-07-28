@@ -4,7 +4,11 @@
     "role": "Junior Full Stack Developer",
     "description": "Sto costruendo il mio percorso nel mondo dello sviluppo web, unendo creatività, curiosità e voglia di imparare.",
     "downloadCv": "Scarica il CV",
-    "decorText": "Creiamo qualcosa di straordinario!",
     "imageAlt": "Avatar anime di Betta"
+  },
+
+  "techStack": {
+    "title": "Tech Stack",
+    "description": "Tecnologie che danno forma alle mie idee."
   }
 }

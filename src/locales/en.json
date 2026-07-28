@@ -5,5 +5,10 @@
     "description": "I'm building my path in the world of web development, combining creativity, curiosity and a strong desire to learn.",
     "downloadCv": "Download CV",
     "imageAlt": "Anime avatar of Betta"
+  },
+
+    "techStack": {
+    "title": "Tech Stack",
+    "description": "Technologies that bring my ideas to life."
   }
 }
