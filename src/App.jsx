@@ -6,11 +6,17 @@ import Projects from "./components/Projects/Projects";
 import Collabs from "./components/Collabs/Collabs";
 import BeyondCode from "./components/BeyondCode/BeyondCode";
 import ImageSection from "./components/BeyondCode/ImageSection";
+import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
 
 function App() {
   return (
     <main>
       <Container fluid className="portfolio-page">
+        <Row className="justify-content-end">
+          <Col xs="auto" className="language-switcher-col">
+            <LanguageSwitcher />
+          </Col>
+        </Row>
         <Row className="align-items-center g-4">
           <Hero />
         </Row>

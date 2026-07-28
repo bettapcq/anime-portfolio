@@ -1,0 +1,10 @@
+{
+  "hero": {
+    "hello": "Ciao! Sono",
+    "role": "Junior Full Stack Developer",
+    "description": "Sto costruendo il mio percorso nel mondo dello sviluppo web, unendo creatività, curiosità e voglia di imparare.",
+    "downloadCv": "Scarica il CV",
+    "decorText": "Creiamo qualcosa di straordinario!",
+    "imageAlt": "Avatar anime di Betta"
+  }
+}

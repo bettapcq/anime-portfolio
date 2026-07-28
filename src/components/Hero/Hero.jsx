@@ -5,6 +5,7 @@ import heroImg from "../../assets/images/hero-betta.png";
 import cvFile from "../../assets/files/cv_elisabetta_piacquadio_gr.pdf";
 import "./Hero.scss";
 import DecorLayer from "../DecorLayer/DecorLayer";
+import { useTranslation } from "react-i18next";
 
 const containerVariants = {
   hidden: {},
@@ -72,6 +73,8 @@ const socialVariants = {
 };
 
 function Hero() {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       className="hero-section"
@@ -84,19 +87,16 @@ function Hero() {
         <Col lg={6} className="hero-content-col justify-content-center">
           <motion.div variants={containerVariants}>
             <motion.span className="eyebrow" variants={fadeUp}>
-              Ciao! Sono
+              {t("hero.hello")}
             </motion.span>
 
             <motion.h1 variants={fadeUp}>
               Elisabetta<span>.</span>
             </motion.h1>
 
-            <motion.h2 variants={fadeUp}>Junior Full Stack Developer</motion.h2>
+            <motion.h2 variants={fadeUp}>{t("hero.role")}</motion.h2>
 
-            <motion.p variants={fadeUp}>
-              Sto costruendo il mio percorso nel mondo dello sviluppo web,
-              unendo creatività, curiosità e voglia di imparare.
-            </motion.p>
+            <motion.p variants={fadeUp}>{t("hero.description")}</motion.p>
 
             <div className="hero-actions">
               <motion.a
@@ -119,7 +119,7 @@ function Hero() {
                 href={cvFile}
                 download
               >
-                Scarica il CV
+                {t("hero.downloadCv")}
               </motion.a>
             </div>
 
