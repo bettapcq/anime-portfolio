@@ -2,6 +2,7 @@ import PCPal from "../../assets/images/popcornpal.png";
 import Portfolio from "../../assets/images/portfolio.png";
 import AppleMusic from "../../assets/images/applemusic.png";
 import ViaggiAziendali from "../../assets/images/viaggiaziendali.png";
+import GranoEGusto from "../../assets/images/granoegusto.png";
 
 export const projects = [
   {
@@ -34,5 +35,14 @@ export const projects = [
     tech: ["Spring Boot", "PostgreSQL", "Postman", "REST APIs"],
     image: ViaggiAziendali,
     link: "https://github.com/bettapcq/project_BE_u2_w2_d5",
+  },
+
+  {
+    title: "Grano e Gusto Pizzeria Ristorante",
+    description: "Sito web responsive e multilingua per pizzeria e ristorante",
+    tech: ["React", "Vite", "Tailwind CSS", "i18next", "Motion"],
+    image: GranoEGusto,
+    link: "https://github.com/bettapcq/grano-e-gusto",
+    demo: "https://www.granoegustopizzeria.it",
   },
 ];
