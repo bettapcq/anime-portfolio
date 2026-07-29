@@ -5,6 +5,7 @@ import { collabs } from "./CollabsData.js";
 import { useState } from "react";
 import { FiArrowUpRight } from "react-icons/fi";
 import { FaCode } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const fadeRight = {
   hidden: {
@@ -24,6 +25,7 @@ const fadeRight = {
 };
 
 const Collabs = () => {
+  const { t } = useTranslation();
   const [orderedCollabs, setOrderedCollabs] = useState(collabs);
 
   return (
@@ -39,7 +41,7 @@ const Collabs = () => {
           {orderedCollabs.map((item, index) => (
             <motion.article
               className="collab-card"
-              key={item.title}
+              key={item.id}
               variants={fadeRight}
               whileHover={{ y: -8, scale: 1.02 }}
             >
@@ -47,7 +49,7 @@ const Collabs = () => {
               <motion.div>
                 <h3>{item.title}</h3>
                 <span>{item.role}</span>
-                <p>{item.text}</p>
+                <p>{t(item.textKey)}</p>
               </motion.div>
 
               <a
@@ -63,12 +65,9 @@ const Collabs = () => {
         </motion.div>
 
         <motion.div className="collabs-side" variants={fadeRight}>
-          <span className="section-label">Collaborazioni</span>
-          <h2>Dove le idee si incontrano.</h2>
-          <p className="collabs-intro">
-            Progetti, esperienze e lavori condivisi in cui ho potuto crescere,
-            confrontarmi e trasformare idee in interfacce concrete.
-          </p>{" "}
+          <span className="section-label">{t("collabs.label")}</span>
+          <h2>{t("collabs.title")}</h2>
+          <p className="collabs-intro">{t("collabs.intro")}</p>{" "}
         </motion.div>
         <motion.div
           className="collabs-image-wrap"

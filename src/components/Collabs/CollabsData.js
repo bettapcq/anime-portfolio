@@ -1,20 +1,23 @@
 export const collabs = [
   {
+    id: "epicEnergyServices",
     title: "Epic Energy Services",
     role: "Backend Developer",
-    text: "Collaborazione allo sviluppo backend di una REST API CRM con Spring Boot, JPA, PostgreSQL e JWT, dedicata alla gestione di clienti, fatture e anagrafiche aziendali.",
+    textKey: "collabs.items.epicEnergyServices.text",
     link: "https://github.com/NamelessKing/epicode-bw2-spring-epic-energy-services-api",
   },
   {
+    id: "transitFlow",
     title: "Transit Flow",
     role: "Backend Developer",
-    text: "Collaborazione allo sviluppo di un’applicazione Java per la gestione di servizi di trasporto pubblico, biglietti e abbonamenti, basata su programmazione object-oriented e organizzazione modulare del codice.",
+    textKey: "collabs.items.transitFlow.text",
     link: "https://github.com/bettapcq/bw_1_java",
   },
   {
+    id: "fakeLinkedinDemo",
     title: "Fake Linkedin Demo",
     role: "Frontend Developer",
-    text: "Collaborazione allo sviluppo di interfacce responsive con React, curando la coerenza visiva e l’implementazione di componenti UI in linea con lo stile e l’esperienza utente della piattaforma web di LinkedIn.",
+    textKey: "collabs.items.fakeLinkedinDemo.text",
     link: "https://github.com/Elisa-Ra/Build-Week-09",
   },
 ];

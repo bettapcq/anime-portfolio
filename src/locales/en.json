@@ -49,5 +49,21 @@
       "description": "Responsive and multilingual website for pizzeria and restaurant"
     }
   }
+},
+"collabs": {
+  "label": "Collaborations",
+  "title": "Where ideas come together.",
+  "intro": "Projects, experiences and shared work where I could grow, compare ideas and turn them into concrete interfaces.",
+  "items": {
+    "epicEnergyServices": {
+      "text": "Worked with a team to develop the backend of a CRM REST API using Spring Boot, JPA, PostgreSQL and JWT. The project manages customers, invoices and company data."
+    },
+    "transitFlow": {
+      "text": "Worked with a team to develop a Java application for public transport management, including tickets and subscriptions, using object-oriented programming and a modular code structure."
+    },
+    "fakeLinkedinDemo": {
+      "text": "Worked with a team to build responsive user interfaces with React, focusing on visual consistency and UI components inspired by the LinkedIn web platform."
+    }
+  }
 }
 }
