@@ -9,9 +9,6 @@ import { useTranslation } from "react-i18next";
 const ProjectCard = ({ project }) => {
   const { t } = useTranslation();
 
-  console.log("PROJECT:", project);
-  console.log("DESCRIPTION KEY:", project?.descriptionKey);
-
   const ref = useRef(null);
   const rotateX = useSpring(0);
   const rotateY = useSpring(0);

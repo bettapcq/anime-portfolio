@@ -65,5 +65,25 @@
       "text": "Collaborazione allo sviluppo di interfacce responsive con React, curando la coerenza visiva e l’implementazione di componenti UI in linea con lo stile e l’esperienza utente della piattaforma web di LinkedIn."
     }
   }
+},
+
+"beyondCode": {
+  "label": "Oltre il codice",
+  "title": "Il mio piccolo mondo insolito.",
+  "paragraph1Before": "Cinema, musica e dettagli ",
+  "paragraph1Strong": "stravaganti",
+  "paragraph1After": " influenzano molto anche il mio modo di vedere le cose.",
+  "paragraph2Before": "Sono appassionata di effetti speciali makeup, amo il cinema, i manga e i festival musicali, e sono affascinata dai ",
+  "paragraph2Strong": "pipistrelli",
+  "paragraph2After": ": mi piace tutto ciò che ha delle caratteristiche un po’ fuori dall’ordinario.",
+  "paragraph3Before": "Per alcuni anni ho praticato ",
+  "paragraph3Strong": "Krav Maga",
+  "paragraph3After": ", un’esperienza che mi ha insegnato disciplina, concentrazione e determinazione.",
+  "paragraph4Before": "Nei momenti più tranquilli, invece, mi rilasso creando ",
+  "paragraph4Strong": "amigurumi",
+  "paragraph4After": ": un modo semplice per rallentare e lasciare spazio alla creatività.",
+  "contactBefore": "Se ti va di conoscermi meglio, trovi tutti i miei contatti tornando all’",
+  "contactStrong": "inizio della pagina",
+  "contactAfter": "."
 }
 }

@@ -65,5 +65,25 @@
       "text": "Worked with a team to build responsive user interfaces with React, focusing on visual consistency and UI components inspired by the LinkedIn web platform."
     }
   }
+},
+
+"beyondCode": {
+  "label": "Beyond Code",
+  "title": "My small unusual world.",
+  "paragraph1Before": "Movies, music and ",
+  "paragraph1Strong": "unusual details",
+  "paragraph1After": " also influence the way I see things.",
+  "paragraph2Before": "I am interested in special effects makeup, and I love movies, manga and music festivals. I am also fascinated by ",
+  "paragraph2Strong": "bats",
+  "paragraph2After": ": I like everything that is a little different from the ordinary.",
+  "paragraph3Before": "For some years, I practised ",
+  "paragraph3Strong": "Krav Maga",
+  "paragraph3After": ", an experience that taught me discipline, focus and determination.",
+  "paragraph4Before": "In quieter moments, I relax by making ",
+  "paragraph4Strong": "amigurumi",
+  "paragraph4After": ": a simple way to slow down and make space for creativity.",
+  "contactBefore": "To know me better, you can find all my contact details by going back to the ",
+  "contactStrong": "top of the page",
+  "contactAfter": "."
 }
 }

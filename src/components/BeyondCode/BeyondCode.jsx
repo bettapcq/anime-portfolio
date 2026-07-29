@@ -1,15 +1,7 @@
 import { FiArrowUp } from "react-icons/fi";
 import "./BeyondCode.scss";
 import { motion } from "motion/react";
-
-const hobbies = [
-  "Cinema",
-  "SFX Makeup",
-  "Pipistrelli",
-  "Festival musicali",
-  "Krav Maga",
-  "Amigurumi",
-];
+import { useTranslation } from "react-i18next";
 
 const fadeRight = {
   hidden: {
@@ -29,6 +21,7 @@ const fadeRight = {
 };
 
 function BeyondCode() {
+  const { t } = useTranslation();
   return (
     <section className="beyond-section">
       <motion.section
@@ -59,7 +52,7 @@ function BeyondCode() {
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
             >
-              Oltre il codice
+              {t("beyondCode.label")}
             </motion.span>
           </motion.div>
           <motion.div
@@ -68,7 +61,7 @@ function BeyondCode() {
             viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 1, delay: 0.15, ease: "easeOut" }}
           >
-            <motion.h2>Il mio piccolo mondo insolito.</motion.h2>
+            <motion.h2>{t("beyondCode.title")}</motion.h2>
           </motion.div>
           <motion.div
             className="beyond-content"
@@ -83,8 +76,9 @@ function BeyondCode() {
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
             >
-              Cinema, musica e dettagli <strong>stravaganti</strong> influenzano
-              molto anche il mio modo di vedere le cose.
+              {t("beyondCode.paragraph1Before")}{" "}
+              <strong>{t("beyondCode.paragraph1Strong")}</strong>{" "}
+              {t("beyondCode.paragraph1After")}
             </motion.p>
             <motion.p
               initial="hidden"
@@ -92,10 +86,9 @@ function BeyondCode() {
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
             >
-              Sono appassionata di effetti speciali makeup, amo il cinema, i
-              manga e i festival musicali, e sono affascinata dai{" "}
-              <strong>pipistrelli</strong>: mi piace tutto ciò che ha delle
-              caratteristiche un po’ fuori dall’ordinario.
+              {t("beyondCode.paragraph2Before")}{" "}
+              <strong>{t("beyondCode.paragraph2Strong")}</strong>{" "}
+              {t("beyondCode.paragraph2After")}
             </motion.p>
             <motion.p
               initial="hidden"
@@ -103,9 +96,9 @@ function BeyondCode() {
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
             >
-              Per alcuni anni ho praticato <strong>Krav Maga</strong>,
-              un’esperienza che mi ha insegnato disciplina, concentrazione e
-              determinazione.
+              {t("beyondCode.paragraph3Before")}{" "}
+              <strong>{t("beyondCode.paragraph3Strong")}</strong>{" "}
+              {t("beyondCode.paragraph3After")}
             </motion.p>
             <motion.p
               initial="hidden"
@@ -113,20 +106,19 @@ function BeyondCode() {
               whileInView="show"
               viewport={{ once: true, amount: 0.1 }}
             >
-              Nei momenti più tranquilli, invece, mi rilasso creando{" "}
-              <strong>amigurumi</strong>: un modo semplice per rallentare e
-              lasciare spazio alla creatività.
+              {t("beyondCode.paragraph4Before")}{" "}
+              <strong>{t("beyondCode.paragraph4Strong")}</strong>{" "}
+              {t("beyondCode.paragraph4After")}
             </motion.p>
           </motion.div>
           <motion.p>
-            Se ti va di conoscermi meglio, trovi tutti i miei contatti tornando
-            all’
+            {t("beyondCode.contactBefore")}{" "}
             <strong>
               <a href="#">
-                inizio della pagina <FiArrowUp />
+                {t("beyondCode.contactStrong")} <FiArrowUp />
               </a>
             </strong>
-            .
+            {t("beyondCode.contactAfter")}
           </motion.p>
         </motion.div>
       </motion.section>
