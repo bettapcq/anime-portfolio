@@ -10,5 +10,22 @@
     "techStack": {
     "title": "Tech Stack",
     "description": "Technologies that bring my ideas to life."
-  }
+  },
+
+  "about": {
+  "label": "About Me",
+  "title": "Curiosity, technology and continuous learning.",
+  "paragraph1Before": "I am a Junior Full Stack Developer and I am very curious about everything that happens ",
+  "paragraph1Strong": "behind the scenes",
+  "paragraph1After": ". This passion started many years ago with movies and backstage videos. I always liked to see how things were made, the work behind every scene, and the people who used technology and code in movies and TV series.",
+  "paragraph2Before": "Over time, this curiosity moved to the digital world and to what happens behind a web application. Then I started learning ",
+  "paragraph2Strong": "Python by myself",
+  "paragraph2After": " and I understood that programming was the right path for me.",
+  "paragraph3Before": "Later, I joined an intensive Full Stack course where I worked on ",
+  "paragraph3Strong": "complete projects",
+  "paragraph3After": " and learned both frontend and backend development. Today I use React, Java, Spring and PostgreSQL to build modern web applications.",
+  "paragraph4Before": "I also have more than ",
+  "paragraph4Strong": "10 years",
+  "paragraph4After": " of experience working with customers. This helped me improve my problem-solving skills, attention to detail, stress management and teamwork."
+}
 }

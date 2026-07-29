@@ -3,6 +3,7 @@ import { motion } from "motion/react";
 import aboutImg from "../../assets/images/about-betta.png";
 import DecorLayer from "../DecorLayer/DecorLayer";
 import "./About.scss";
+import { useTranslation } from "react-i18next";
 
 const fadeRight = {
   hidden: {
@@ -22,6 +23,8 @@ const fadeRight = {
 };
 
 function About() {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       className="glass-section"
@@ -46,7 +49,7 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Su di me
+          {t("about.label")}
         </motion.span>
 
         <motion.h2
@@ -55,7 +58,7 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Curiosità, tecnologia e crescita continua.
+          {t("about.title")}
         </motion.h2>
       </motion.div>
       <motion.div
@@ -71,12 +74,9 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Sono una Junior Full Stack Developer con una forte curiosità per tutto
-          ciò che accade <strong>dietro le quinte</strong>. Questa passione
-          nasce da lontano, dal cinema e dai backstage: mi ha sempre affascinato
-          osservare come venissero costruite le cose, il lavoro nascosto dietro
-          ogni scena e le figure che si occupavano di tecnologia e codice nei
-          film e nelle serie TV.
+          {t("about.paragraph1Before")}{" "}
+          <strong>{t("about.paragraph1Strong")}</strong>{" "}
+          {t("about.paragraph1After")}
         </motion.p>
         <motion.p
           initial="hidden"
@@ -84,11 +84,9 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Con il tempo quella curiosità si è spostata anche verso il mondo
-          digitale e verso ciò che succede dietro le quinte di un’applicazione
-          web. Da lì ho iniziato a studiare{" "}
-          <strong>Python da autodidatta</strong> e ho capito che la
-          programmazione poteva davvero essere la mia strada.
+          {t("about.paragraph2Before")}{" "}
+          <strong>{t("about.paragraph2Strong")}</strong>{" "}
+          {t("about.paragraph2After")}
         </motion.p>
         <motion.p
           initial="hidden"
@@ -96,11 +94,9 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Successivamente ho scelto di formarmi attraverso un percorso intensivo
-          Full Stack, lavorando su <strong>progetti completi</strong> e
-          sviluppando competenze sia frontend che backend. Oggi utilizzo
-          tecnologie come React, Java, Spring e PostgreSQL per creare
-          applicazioni web complete e moderne.
+          {t("about.paragraph3Before")}{" "}
+          <strong>{t("about.paragraph3Strong")}</strong>{" "}
+          {t("about.paragraph3After")}
         </motion.p>
         <motion.p
           initial="hidden"
@@ -108,10 +104,9 @@ function About() {
           whileInView="show"
           viewport={{ once: true, amount: 0.1 }}
         >
-          Arrivo inoltre da oltre <strong>10 anni</strong> di esperienza in
-          contesti a contatto con il pubblico, un percorso che mi ha permesso di
-          sviluppare capacità di problem solving, attenzione al dettaglio,
-          gestione dello stress e lavoro in team.
+          {t("about.paragraph4Before")}{" "}
+          <strong>{t("about.paragraph4Strong")}</strong>{" "}
+          {t("about.paragraph4After")}
         </motion.p>
       </motion.div>
     </motion.section>

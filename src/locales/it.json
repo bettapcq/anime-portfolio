@@ -10,5 +10,22 @@
   "techStack": {
     "title": "Tech Stack",
     "description": "Tecnologie che danno forma alle mie idee."
-  }
+  },
+
+  "about": {
+    "label": "Su di me",
+    "title": "Curiosità, tecnologia e crescita continua.",
+    "paragraph1Before": "Sono una Junior Full Stack Developer con una forte curiosità per tutto ciò che accade ",
+    "paragraph1Strong": "dietro le quinte",
+    "paragraph1After": ". Questa passione nasce da lontano, dal cinema e dai backstage: mi ha sempre affascinato osservare come venissero costruite le cose, il lavoro nascosto dietro ogni scena e le figure che si occupavano di tecnologia e codice nei film e nelle serie TV.",
+    "paragraph2Before": "Con il tempo quella curiosità si è spostata anche verso il mondo digitale e verso ciò che succede dietro le quinte di un'applicazione web. Da lì ho iniziato a studiare ",
+    "paragraph2Strong": "Python da autodidatta",
+    "paragraph2After": " e ho capito che la programmazione poteva davvero essere la mia strada.",
+    "paragraph3Before": "Successivamente ho scelto di formarmi attraverso un percorso intensivo Full Stack, lavorando su ",
+    "paragraph3Strong": "progetti completi",
+    "paragraph3After": " e sviluppando competenze sia frontend che backend. Oggi utilizzo tecnologie come React, Java, Spring e PostgreSQL per creare applicazioni web complete e moderne.",
+    "paragraph4Before": "Arrivo inoltre da oltre ",
+    "paragraph4Strong": "10 anni",
+    "paragraph4After": " di esperienza in contesti a contatto con il pubblico, un percorso che mi ha permesso di sviluppare capacità di problem solving, attenzione al dettaglio, gestione dello stress e lavoro in team."
+}
 }
