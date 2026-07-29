@@ -2,7 +2,8 @@ import { Button, Col, Row } from "react-bootstrap";
 import * as motion from "motion/react-client";
 import { FaGithub, FaLinkedinIn, FaEnvelope } from "react-icons/fa";
 import heroImg from "../../assets/images/hero-betta.png";
-import cvFile from "../../assets/files/cv_elisabetta_piacquadio_gr.pdf";
+import cvFileIt from "../../assets/files/cv/cv-elisabetta-piacquadio-g-it.pdf";
+import cvFileEn from "../../assets/files/cv/cv-elisabetta-piacquadio-g-en.pdf";
 import "./Hero.scss";
 import DecorLayer from "../DecorLayer/DecorLayer";
 import { useTranslation } from "react-i18next";
@@ -73,11 +74,17 @@ const socialVariants = {
 };
 
 function Hero() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  // Dove t serve per tradurre e i18n contiene informazioni sulla lingua corrente.
+  // In questo caso, viene utilizzato tramite i18n.resolvedLanguage
+  // per determinare quale file CV scaricare in base alla lingua selezionata.
+
+  const currentLanguage = i18n.resolvedLanguage?.startsWith("it") ? "it" : "en";
+
+  const cvFile = currentLanguage === "it" ? cvFileIt : cvFileEn;
 
   return (
     <motion.section
-      className="hero-section"
       className="hero-section"
       initial="hidden"
       animate="show"
