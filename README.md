@@ -49,6 +49,18 @@ The project showcases my work as a Full Stack Developer through smooth animation
 
 ---
 
+## SEO & Performance
+
+- Custom domain
+- Open Graph metadata
+- Structured Data (Schema.org)
+- Sitemap.xml
+- Robots.txt
+- Responsive design
+- Lighthouse optimized
+
+---
+
 ## Interactive Animations
 
 ### Dynamic Octagon
