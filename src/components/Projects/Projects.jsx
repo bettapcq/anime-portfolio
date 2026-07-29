@@ -5,6 +5,7 @@ import ProjectCard from "./ProjectCard";
 import "./Projects.scss";
 import DecorLayer from "../DecorLayer/DecorLayer";
 import ProjectImg from "../../assets/images/betta-full.png";
+import { useTranslation } from "react-i18next";
 
 const fadeLeft = {
   hidden: {
@@ -34,6 +35,8 @@ const spring = {
 };
 
 function Projects() {
+  const { t } = useTranslation();
+
   const [orderedProjects, setOrderedProjects] = useState(projects);
 
   return (
@@ -54,15 +57,13 @@ function Projects() {
         <img src={ProjectImg} alt="Anime avatar Betta" />
       </motion.div>
       <div className="projects-content">
-        <span className="section-label">Progetti</span>
-        <h2>Il codice che prende forma.</h2>
+        <span className="section-label">{t("projects.label")}</span>
+        <h2>{t("projects.title")}</h2>
       </div>
 
       <div className="projects-grid">
         {orderedProjects.map((project) => (
-          <div key={project.title}>
-            <ProjectCard project={project} />
-          </div>
+          <ProjectCard key={project.id} project={project} />
         ))}
       </div>
     </motion.section>

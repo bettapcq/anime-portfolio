@@ -27,5 +27,27 @@
   "paragraph4Before": "I also have more than ",
   "paragraph4Strong": "10 years",
   "paragraph4After": " of experience working with customers. This helped me improve my problem-solving skills, attention to detail, stress management and teamwork."
+},
+
+"projects": {
+  "label": "Projects",
+  "title": "Code taking shape.",
+  "items": {
+    "popcornpal": {
+      "description": "Social platform for movie lovers"
+    },
+    "animePortfolio": {
+      "description": "Personal portfolio with animations and interactions"
+    },
+    "fakeAppleMusic": {
+      "description": "Clone of Apple Music web app"
+    },
+    "viaggiAziendali": {
+      "description": "Backend for business travel management"
+    },
+    "granoEGusto": {
+      "description": "Responsive and multilingual website for pizzeria and restaurant"
+    }
+  }
 }
 }

@@ -27,5 +27,27 @@
     "paragraph4Before": "Arrivo inoltre da oltre ",
     "paragraph4Strong": "10 anni",
     "paragraph4After": " di esperienza in contesti a contatto con il pubblico, un percorso che mi ha permesso di sviluppare capacità di problem solving, attenzione al dettaglio, gestione dello stress e lavoro in team."
+},
+
+"projects": {
+  "label": "Progetti",
+  "title": "Il codice che prende vita.",
+  "items": {
+    "popcornpal": {
+      "description": "Piattaforma social per appassionati di cinema"
+    },
+    "animePortfolio": {
+      "description": "Portfolio personale con animazioni e interazioni"
+    },
+    "fakeAppleMusic": {
+      "description": "Clone dell'applicazione web di Apple Music"
+    },
+    "viaggiAziendali": {
+      "description": "Backend per la gestione dei viaggi aziendali"
+    },
+    "granoEGusto": {
+      "description": "Sito web responsive e multilingua per pizzeria e ristorante"
+    }
+  } 
 }
 }

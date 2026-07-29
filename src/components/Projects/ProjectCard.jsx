@@ -4,8 +4,14 @@ import { FiArrowUpRight } from "react-icons/fi";
 import { useRef } from "react";
 import TiltedCard from "./TiltedCard";
 import { FaCode, FaPlay } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const ProjectCard = ({ project }) => {
+  const { t } = useTranslation();
+
+  console.log("PROJECT:", project);
+  console.log("DESCRIPTION KEY:", project?.descriptionKey);
+
   const ref = useRef(null);
   const rotateX = useSpring(0);
   const rotateY = useSpring(0);
@@ -55,7 +61,7 @@ const ProjectCard = ({ project }) => {
             <div className="project-header">
               <div>
                 <h3>{project.title}</h3>
-                <p>{project.description}</p>
+                <p>{t(project.descriptionKey)}</p>
               </div>
             </div>
             <div className="project-tech">
