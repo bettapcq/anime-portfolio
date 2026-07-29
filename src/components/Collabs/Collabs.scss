@@ -4,6 +4,7 @@
   margin-top: 6rem;
   padding: 4rem 3rem;
   overflow: hidden;
+
   h2 {
     color: $text-primary;
     text-shadow: $text-shadow-light;
@@ -43,6 +44,7 @@
   line-height: 1.7;
   font-size: 1.05rem;
 }
+
 .collabs-grid {
   margin-top: 3.5rem;
   display: grid;
@@ -160,6 +162,7 @@
   font-size: 2rem;
   align-self: flex-end;
   place-items: center;
+
   &:hover {
     transform: translateY(-2px);
   }
@@ -177,6 +180,7 @@
   .collabs-layout {
     grid-template-columns: 1fr;
   }
+
   .collabs-side {
     order: -1;
     text-align: center;
@@ -184,7 +188,11 @@
 
   .collabs-image-wrap {
     top: 81rem;
+    bottom: auto;
     left: 0rem;
+    right: auto;
+    width: 498px;
+
     img {
       width: 250px;
     }
@@ -207,6 +215,7 @@
     grid-column: auto;
     max-width: 100%;
   }
+
   .collabs-section {
     position: relative;
     padding-bottom: 0;
@@ -214,7 +223,14 @@
 
   .collabs-image-wrap {
     position: absolute;
-    bottom: -135px;
+    top: auto;
+    bottom: -60px;
+    left: 0rem;
+    right: auto;
     width: 220px;
+
+    img {
+      width: 100%;
+    }
   }
 }
