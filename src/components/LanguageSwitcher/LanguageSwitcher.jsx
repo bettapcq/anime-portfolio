@@ -8,8 +8,6 @@ function LanguageSwitcher() {
 
   const currentLanguage = i18n.resolvedLanguage?.startsWith("en") ? "en" : "it";
 
-  console.log(currentLanguage, i18n.resolvedLanguage);
-
   const changeLanguage = () => {
     const newLanguage = currentLanguage === "it" ? "en" : "it";
 
