@@ -8,7 +8,7 @@ The project showcases my work as a Full Stack Developer through smooth animation
 
 ## Live Demo
 
-🌐 https://anime-portfolio-ep.vercel.app/
+🌐 https://elisabettapiacquadiodev.it 
 
 ![Portfolio Preview](./src/assets/gifs/portfolio-preview-3.gif)
 
@@ -99,6 +99,6 @@ npm run build
 
 **Elisabetta Piacquadio**
 
-- Portfolio: https://anime-portfolio-ep.vercel.app/
+- Portfolio: https://elisabettapiacquadiodev.it 
 - LinkedIn: https://linkedin.com/in/elisabettapiacquadio
-- GitHub: https://github.com/<tuo-username>
+- GitHub: https://github.com/bettapcq
