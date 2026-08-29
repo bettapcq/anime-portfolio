@@ -22,12 +22,10 @@ const fadeUp = {
   hidden: {
     opacity: 0,
     y: 28,
-    filter: "blur(6px)",
   },
   show: {
     opacity: 1,
     y: 0,
-    filter: "blur(0px)",
     transition: {
       duration: 0.7,
       ease: "easeOut",
