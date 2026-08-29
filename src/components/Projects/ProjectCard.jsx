@@ -34,6 +34,9 @@ const ProjectCard = ({ project }) => {
             <div className="project-header">
               <div>
                 <h3>{project.title}</h3>
+                {project.statusKey && (
+                  <span className="project-status">{t(project.statusKey)}</span>
+                )}
                 <p>{t(project.descriptionKey)}</p>
               </div>
             </div>

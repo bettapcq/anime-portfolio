@@ -3,8 +3,36 @@ import Portfolio from "../../assets/images/portfolio.png";
 import AppleMusic from "../../assets/images/applemusic.png";
 import ViaggiAziendali from "../../assets/images/viaggiaziendali.png";
 import GranoEGusto from "../../assets/images/granoegusto.png";
+import BloodyGlyph from "../../assets/images/bloodyglyph.png";
 
 export const projects = [
+  {
+    id: "BloodyGlyph",
+    title: "BloodyGlyph",
+    descriptionKey: "projects.items.bloodyGlyph.description",
+    statusKey: "projects.status.inDevelopment",
+    tech: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Java",
+      "Spring Boot",
+      "PostgreSQL",
+      "Motion",
+      "ZXing",
+    ],
+    image: BloodyGlyph,
+    link: "https://github.com/bettapcq/bloody-glyph",
+  },
+  {
+    id: "granoEGusto",
+    title: "Grano e Gusto Pizzeria Ristorante",
+    descriptionKey: "projects.items.granoEGusto.description",
+    tech: ["React", "Vite", "Tailwind CSS", "i18next", "Motion"],
+    image: GranoEGusto,
+    link: "https://github.com/bettapcq/grano-e-gusto",
+    demo: "https://www.granoegustopizzeria.it",
+  },
   {
     id: "popcornpal",
     title: "PopcornPal",
@@ -39,15 +67,5 @@ export const projects = [
     tech: ["Spring Boot", "PostgreSQL", "Postman", "REST APIs"],
     image: ViaggiAziendali,
     link: "https://github.com/bettapcq/project_BE_u2_w2_d5",
-  },
-
-  {
-    id: "granoEGusto",
-    title: "Grano e Gusto Pizzeria Ristorante",
-    descriptionKey: "projects.items.granoEGusto.description",
-    tech: ["React", "Vite", "Tailwind CSS", "i18next", "Motion"],
-    image: GranoEGusto,
-    link: "https://github.com/bettapcq/grano-e-gusto",
-    demo: "https://www.granoegustopizzeria.it",
   },
 ];
