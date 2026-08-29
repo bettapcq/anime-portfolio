@@ -43,7 +43,7 @@ function App() {
             <ImageSection />
           </Col>{" "}
           <Col xs={12} md={7} className="order-1 order-md-2">
-            <BeyondCode />
+            <BeyondCode setShowCookiePreferences={setShowCookiePreferences} />
           </Col>
         </Row>
       </Container>

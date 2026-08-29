@@ -2,7 +2,6 @@ import { FiArrowUp } from "react-icons/fi";
 import "./BeyondCode.scss";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
-import { Col } from "react-bootstrap";
 
 const fadeRight = {
   hidden: {
@@ -21,8 +20,9 @@ const fadeRight = {
   },
 };
 
-function BeyondCode() {
+function BeyondCode({ setShowCookiePreferences }) {
   const { t } = useTranslation();
+
   return (
     <section className="beyond-section">
       <motion.section
