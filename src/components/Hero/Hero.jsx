@@ -81,6 +81,23 @@ function Hero() {
 
   const cvFile = currentLanguage === "it" ? cvFileIt : cvFileEn;
 
+  //questi handle servono per salvare in GA4 il num di cv scaricati, di click ai link social, ai progetti e alla mail
+  const handleCvDownload = () => {
+    window.gtag?.("event", "download_cv", {
+      language: currentLanguage,
+    });
+  };
+
+  const handleSocialClick = (platform) => {
+    window.gtag?.("event", "social_click", {
+      platform,
+    });
+  };
+
+  const handleEmailClick = () => {
+    window.gtag?.("event", "contact_email");
+  };
+
   return (
     <motion.section
       className="hero-section"
@@ -123,6 +140,7 @@ function Hero() {
                 className="btn-main"
                 href={cvFile}
                 download
+                onClick={handleCvDownload}
               >
                 {t("hero.downloadCv")}
               </motion.a>
@@ -136,7 +154,12 @@ function Hero() {
                 whileTap="tap"
                 variants={socialVariants}
               >
-                <a href="https://github.com/bettapcq" target="_blank">
+                <a
+                  href="https://github.com/bettapcq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => handleSocialClick("github")}
+                >
                   <FaGithub />
                 </a>
               </motion.div>
@@ -150,6 +173,8 @@ function Hero() {
                 <a
                   href="https://www.linkedin.com/in/elisabettapiacquadio"
                   target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => handleSocialClick("linkedin")}
                 >
                   <FaLinkedinIn />
                 </a>
@@ -161,7 +186,7 @@ function Hero() {
                 whileTap="tap"
                 variants={socialVariants}
               >
-                <a href="mailto:betta.pcq@gmail.com" target="_blank">
+                <a href="mailto:betta.pcq@gmail.com" onClick={handleEmailClick}>
                   <FaEnvelope />
                 </a>
               </motion.div>

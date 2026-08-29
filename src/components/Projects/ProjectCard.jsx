@@ -1,7 +1,4 @@
-import { motion, useMotionValue, useSpring } from "framer-motion";
 import "./Projects.scss";
-import { FiArrowUpRight } from "react-icons/fi";
-import { useRef } from "react";
 import TiltedCard from "./TiltedCard";
 import { FaCode, FaPlay } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
@@ -9,33 +6,12 @@ import { useTranslation } from "react-i18next";
 const ProjectCard = ({ project }) => {
   const { t } = useTranslation();
 
-  const ref = useRef(null);
-  const rotateX = useSpring(0);
-  const rotateY = useSpring(0);
-
-  function handleMouseMove(e) {
-    if (!ref.current) return;
-
-    const rect = ref.current.getBoundingClientRect();
-
-    const width = rect.width;
-    const height = rect.height;
-
-    const mouseX = e.clientX - rect.left;
-    const mouseY = e.clientY - rect.top;
-
-    const rotateYValue = (mouseX / width - 0.5) * 16;
-
-    const rotateXValue = (mouseY / height - 0.5) * -16;
-
-    rotateX.set(rotateXValue);
-    rotateY.set(rotateYValue);
-  }
-
-  function handleMouseLeave() {
-    rotateX.set(0);
-    rotateY.set(0);
-  }
+  const handleProjectClick = (destination) => {
+    window.gtag?.("event", "project_click", {
+      project_name: project.title,
+      destination,
+    });
+  };
 
   return (
     <TiltedCard
@@ -72,6 +48,7 @@ const ProjectCard = ({ project }) => {
                 target="_blank"
                 rel="noreferrer"
                 className="project-link-btn"
+                onClick={() => handleProjectClick("github")}
               >
                 <FaCode className="project-link" />
               </a>{" "}
@@ -81,6 +58,7 @@ const ProjectCard = ({ project }) => {
                   target="_blank"
                   rel="noreferrer"
                   className="project-link-btn"
+                  onClick={() => handleProjectClick("live_demo")}
                 >
                   <FaPlay className="project-link" />
                 </a>

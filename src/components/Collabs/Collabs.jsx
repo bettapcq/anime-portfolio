@@ -3,7 +3,6 @@ import "./Collabs.scss";
 import collabsImg from "../../assets/images/collabs.png";
 import { collabs } from "./CollabsData.js";
 import { useState } from "react";
-import { FiArrowUpRight } from "react-icons/fi";
 import { FaCode } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
@@ -26,6 +25,12 @@ const fadeRight = {
 const Collabs = () => {
   const { t } = useTranslation();
   const [orderedCollabs, setOrderedCollabs] = useState(collabs);
+
+  const handleCollabsClick = (item) => {
+    window.gtag?.("event", "collab_click", {
+      collab_name: item.title,
+    });
+  };
 
   return (
     <motion.section className="collabs-section glass-section" id="collabs">
@@ -56,6 +61,7 @@ const Collabs = () => {
                 target="_blank"
                 rel="noreferrer"
                 className="collabs-link"
+                onClick={() => handleCollabsClick(item)}
               >
                 <FaCode />
               </a>
