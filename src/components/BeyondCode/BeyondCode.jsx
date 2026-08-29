@@ -2,6 +2,7 @@ import { FiArrowUp } from "react-icons/fi";
 import "./BeyondCode.scss";
 import { motion } from "motion/react";
 import { useTranslation } from "react-i18next";
+import { Col } from "react-bootstrap";
 
 const fadeRight = {
   hidden: {
@@ -121,6 +122,11 @@ function BeyondCode() {
             {t("beyondCode.contactAfter")}
           </motion.p>
         </motion.div>
+        <div className="cookie-preferences">
+          <button onClick={() => setShowCookiePreferences(true)}>
+            {t("cookieBanner.preferences")}
+          </button>
+        </div>
       </motion.section>
     </section>
   );
