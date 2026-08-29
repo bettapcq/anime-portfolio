@@ -47,8 +47,14 @@
     },
     "granoEGusto": {
       "description": "Sito web responsive e multilingua per pizzeria e ristorante"
-    }
-  } 
+    },
+    "bloodyGlyph": {
+  "description": "Applicazione full stack per creare e gestire QR code dinamici."
+}
+  } ,
+    "status": {
+  "inDevelopment": "In sviluppo"
+}
 },
 "collabs": {
   "label": "Collaborazioni",

@@ -47,7 +47,11 @@
     },
     "granoEGusto": {
       "description": "Responsive and multilingual website for pizzeria and restaurant"
-    }
+    },
+    "bloodyGlyph": {
+  "description": "Full-stack application for creating and managing dynamic QR codes."
+}
+
   }
 },
 "collabs": {
@@ -64,7 +68,10 @@
     "fakeLinkedinDemo": {
       "text": "Worked with a team to build responsive user interfaces with React, focusing on visual consistency and UI components inspired by the LinkedIn web platform."
     }
-  }
+  },
+  "status": {
+  "inDevelopment": "In development"
+}
 },
 
 "beyondCode": {
