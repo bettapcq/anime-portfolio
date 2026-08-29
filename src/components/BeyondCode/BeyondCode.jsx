@@ -20,8 +20,9 @@ const fadeRight = {
   },
 };
 
-function BeyondCode() {
+function BeyondCode({ setShowCookiePreferences }) {
   const { t } = useTranslation();
+
   return (
     <section className="beyond-section">
       <motion.section
@@ -121,6 +122,11 @@ function BeyondCode() {
             {t("beyondCode.contactAfter")}
           </motion.p>
         </motion.div>
+        <div className="cookie-preferences">
+          <button onClick={() => setShowCookiePreferences(true)}>
+            {t("cookieBanner.preferences")}
+          </button>
+        </div>
       </motion.section>
     </section>
   );

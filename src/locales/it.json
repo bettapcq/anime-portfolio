@@ -85,5 +85,16 @@
   "contactBefore": "Se ti va di conoscermi meglio, trovi tutti i miei contatti tornando all’",
   "contactStrong": "inizio della pagina",
   "contactAfter": "."
-}
+},
+
+
+  "cookieBanner": {
+    "message": "Questo sito utilizza Google Analytics per raccogliere statistiche sull'utilizzo del portfolio.",
+    "reject": "Rifiuta",
+    "accept": "Accetta",  
+    "preferences": "Preferenze cookie"
+  }
+
+
+
 }

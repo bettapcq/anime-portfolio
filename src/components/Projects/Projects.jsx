@@ -11,12 +11,11 @@ const fadeLeft = {
   hidden: {
     opacity: 0,
     x: -100,
-    filter: "blur(6px)",
   },
   show: {
     opacity: 1,
     x: 0,
-    filter: "blur(0px)",
+
     transition: {
       duration: 1,
       ease: "easeOut",

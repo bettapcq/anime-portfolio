@@ -7,8 +7,12 @@ import Collabs from "./components/Collabs/Collabs";
 import BeyondCode from "./components/BeyondCode/BeyondCode";
 import ImageSection from "./components/BeyondCode/ImageSection";
 import LanguageSwitcher from "./components/LanguageSwitcher/LanguageSwitcher";
+import CookieBanner from "./components/CookieBanner/CookieBanner";
+import { useState } from "react";
 
 function App() {
+  const [showCookiePreferences, setShowCookiePreferences] = useState(false);
+
   return (
     <main>
       <Container fluid className="portfolio-page">
@@ -39,10 +43,15 @@ function App() {
             <ImageSection />
           </Col>{" "}
           <Col xs={12} md={7} className="order-1 order-md-2">
-            <BeyondCode />
+            <BeyondCode setShowCookiePreferences={setShowCookiePreferences} />
           </Col>
         </Row>
       </Container>
+      <CookieBanner
+        forceShow={showCookiePreferences} // serve per forzare la riapertura
+        // del banner se l'utente clicca sul bottone per cambiare le sue preferenze
+        onClose={() => setShowCookiePreferences(false)}
+      />
     </main>
   );
 }

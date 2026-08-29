@@ -85,5 +85,13 @@
   "contactBefore": "To know me better, you can find all my contact details by going back to the ",
   "contactStrong": "top of the page",
   "contactAfter": "."
-}
+},
+
+  "cookieBanner": {
+    "message": "This website uses Google Analytics to collect statistics about how the portfolio is used.",
+    "reject": "Reject",
+    "accept": "Accept",
+    "preferences": "Cookie preferences"
+  }
+
 }
