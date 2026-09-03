@@ -10,7 +10,6 @@ export const projects = [
     id: "BloodyGlyph",
     title: "BloodyGlyph",
     descriptionKey: "projects.items.bloodyGlyph.description",
-    statusKey: "projects.status.inDevelopment",
     tech: [
       "React",
       "Vite",
@@ -23,6 +22,7 @@ export const projects = [
     ],
     image: BloodyGlyph,
     link: "https://github.com/bettapcq/bloody-glyph",
+    demo: "https://bloodyglyph.vercel.app",
   },
   {
     id: "granoEGusto",
@@ -34,6 +34,14 @@ export const projects = [
     demo: "https://www.granoegustopizzeria.it",
   },
   {
+    id: "animePortfolio",
+    title: "Anime Portfolio",
+    descriptionKey: "projects.items.animePortfolio.description",
+    tech: ["React", "Bootstrap", "Three.js", "Framer Motion", "Sass"],
+    image: Portfolio,
+    link: "https://github.com/bettapcq/anime-portfolio",
+  },
+  {
     id: "popcornpal",
     title: "PopcornPal",
     descriptionKey: "projects.items.popcornpal.description",
@@ -41,15 +49,6 @@ export const projects = [
     image: PCPal,
     link: "https://github.com/bettapcq/PopCornPal_fe",
     demo: "https://popcornpal-ep.vercel.app",
-  },
-
-  {
-    id: "animePortfolio",
-    title: "Anime Portfolio",
-    descriptionKey: "projects.items.animePortfolio.description",
-    tech: ["React", "Bootstrap", "Three.js", "Framer Motion", "Sass"],
-    image: Portfolio,
-    link: "https://github.com/bettapcq/anime-portfolio",
   },
   {
     id: "fakeAppleMusic",
